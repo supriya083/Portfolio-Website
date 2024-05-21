@@ -28,8 +28,8 @@ header h1 {
 
 .profile a {
     display: block;
-    color: #333;
-    text-decoration: none;
+    color: ff00ee;
+    text-decoration: underline;
     margin: 0.5rem 0;
 }
 
