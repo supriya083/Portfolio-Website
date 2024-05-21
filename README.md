@@ -1,7 +1,3 @@
-# Portfolio-Website
-Sure, here's a sample README file for your portfolio project:
-
----
 
 # K. Sai Supriya's Portfolio
 
