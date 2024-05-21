@@ -1,9 +1,14 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    background-image: url('https://zeevector.com/wp-content/uploads/Cute-Pastel-Background.png');
-    margin: 0;
-    padding: 0;
+    color: #333;
 }
 
 header {
@@ -24,13 +29,23 @@ header h1 {
 
 .profile img {
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .profile a {
-    display: block;
-    color: ff00ee;
-    text-decoration: underline;
-    margin: 0.5rem 0;
+    display: inline-block;
+    color: #ff00ee;
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.profile a:hover {
+    color: #d600b0;
 }
 
 main {
@@ -42,10 +57,12 @@ main {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav li {
-    margin: 1rem 0;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 nav a {
@@ -53,14 +70,14 @@ nav a {
     color: #333;
     background-color: #fff;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
-    display: block;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #ddd;
+    background-color: #f2f2f2;
 }
 
 footer {
@@ -79,11 +96,14 @@ table {
     margin: 1rem 0;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
     padding: 0.5rem;
     text-align: left;
 }
@@ -102,5 +122,5 @@ ul li {
     margin: 0.5rem 0;
     padding: 1rem;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
